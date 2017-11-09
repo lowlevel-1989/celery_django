@@ -1,0 +1,11 @@
+applicaciones necesarias
+  - postgres:9.6.1
+  - redis:
+
+Correr servidor celery
+  * SERVER WORKER
+	  - celery -A demo worker -l info
+
+  * SERVER BEAT
+          - celery -A demo beat -l info -S django
+
